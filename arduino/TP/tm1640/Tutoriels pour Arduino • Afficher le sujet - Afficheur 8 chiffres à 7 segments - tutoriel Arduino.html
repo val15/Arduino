@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17 -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr" xml:lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="fr">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino</title>
+
+<link rel="alternate" type="application/atom+xml" title="Flux - Tutoriels pour Arduino" href="http://tiptopboards.free.fr/arduino_forum/feed.php"><link rel="alternate" type="application/atom+xml" title="Flux - Nouveaux sujets" href="http://tiptopboards.free.fr/arduino_forum/feed.php?mode=topics"><link rel="alternate" type="application/atom+xml" title="Flux - Forums - Capteurs" href="http://tiptopboards.free.fr/arduino_forum/feed.php?f=2"><link rel="alternate" type="application/atom+xml" title="Flux - Sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino" href="http://tiptopboards.free.fr/arduino_forum/feed.php?f=2&t=17">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script async="" src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/analytics.js"></script><script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Entrer le numéro de page où vous souhaitez aller.:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=http://tiptopboards.free.fr/';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/styleswitcher.js"></script>
+<script type="text/javascript" src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/forum_fn.js"></script>
+
+<link href="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" disabled="">
+<link href="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/style.php" rel="stylesheet" type="text/css" media="screen, projection">
+
+<link href="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/normal.css" rel="stylesheet" type="text/css" title="A" disabled="">
+<link href="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/medium.css" rel="alternate stylesheet" type="text/css" title="A+" disabled="">
+<link href="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/large.css" rel="alternate stylesheet" type="text/css" title="A++" disabled="">
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="http://tiptopboards.free.fr/arduino_forum/index.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Index du forum" id="logo"><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/site_logo.gif" width="149" height="52" alt="" title=""></a>
+				<h1>Tutoriels pour Arduino</h1>
+				<p>Tutoriels Tiptoopboards</p>
+				<p class="skiplink"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#start_here">Vers le contenu</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="http://tiptopboards.free.fr/arduino_forum/search.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Recherche par mots-clés" class="inputbox search" value="Recherche…" onclick="if(this.value==&#39;Recherche…&#39;)this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Recherche…&#39;;">
+					<input class="button2" value="Rechercher" type="submit"><br>
+					<a href="http://tiptopboards.free.fr/arduino_forum/search.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Voir les options de recherche avancée">Recherche avancée</a> <input type="hidden" name="sid" value="8b10dd3675f84d99d2ef10ec2ebb5d67">
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="http://tiptopboards.free.fr/arduino_forum/index.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" accesskey="h">Index du forum</a>  <strong>‹</strong> <a href="http://tiptopboards.free.fr/arduino_forum/viewforum.php?f=1&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">Tutoriels</a> <strong>‹</strong> <a href="http://tiptopboards.free.fr/arduino_forum/viewforum.php?f=2&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">Capteurs</a></li>
+
+				<li class="rightside"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Modifier la taille de la police">Modifier la taille de la police</a></li>
+
+				<li class="rightside"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17&sid=8b10dd3675f84d99d2ef10ec2ebb5d67&view=print" title="Imprimer le sujet" accesskey="p" class="print">Imprimer le sujet</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="http://tiptopboards.free.fr/arduino_forum/faq.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Foire aux questions (Questions posées fréquemment)">FAQ</a></li>
+				<li class="icon-register"><a href="http://tiptopboards.free.fr/arduino_forum/ucp.php?mode=register&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">M’enregistrer</a></li>
+					<li class="icon-logout"><a href="http://tiptopboards.free.fr/arduino_forum/ucp.php?mode=login&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Connexion" accesskey="x">Connexion</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">Afficheur 8 chiffres à 7 segments - tutoriel Arduino</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">utilisation de capteurs avec Arduino<br></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="http://tiptopboards.free.fr/arduino_forum/posting.php?mode=reply&f=2&t=17&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Répondre"><span></span>Répondre</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="http://tiptopboards.free.fr/arduino_forum/search.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67">
+			<fieldset>
+				<input class="inputbox search tiny" type="text" name="keywords" id="search_keywords" size="20" value="Dans ce sujet…" onclick="if(this.value==&#39;Dans ce sujet…&#39;)this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Dans ce sujet…&#39;;">
+				<input class="button2" type="submit" value="Rechercher">
+				<input type="hidden" name="t" value="17">
+<input type="hidden" name="sf" value="msgonly">
+<input type="hidden" name="sid" value="8b10dd3675f84d99d2ef10ec2ebb5d67">
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			1 message
+			 • Page <strong>1</strong> sur <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p17" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#p17">Afficheur 8 chiffres à 7 segments - tutoriel Arduino</a></h3>
+			<p class="author"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?p=17&sid=8b10dd3675f84d99d2ef10ec2ebb5d67#p17"><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/icon_post_target.gif" width="11" height="9" alt="Message" title="Message"></a>par <strong><a href="http://tiptopboards.free.fr/arduino_forum/memberlist.php?mode=viewprofile&u=2&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" style="color: #AA0000;" class="username-coloured">tiptop</a></strong> » Mer 21 Aoû 2013 22:35 </p>
+
+			
+
+			<div class="content">Afficheur 8 chiffres à 7 segments - tutoriel Arduino<br><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_module.jpg" alt="Image"><br><br><span style="font-size: 150%; line-height: 116%;">Composant utilisés</span><br><ul><li>1 <a href="http://tiptopboards.com/106-module-8-chiffres-7-segments-8-boutons-8-led-bicolores.html" class="postlink">module afficheur 8 chiffres à 7 segments  avec leds et boutons</a> .</li><li>1 <a href="http://tiptopboards.com/65-carte-arduino-uno-r3-cable-usb.html" class="postlink">carte Arduino Uno</a></li><li><a href="http://tiptopboards.com/237-25-c%C3%A2bles-de-connexion-dupont-femelle-femelle-20-cm.html" class="postlink">Fils de câblage Femelle/Femelle</a></li><li><a href="http://tiptopboards.com/104-barrette-de-connection-40-pins.html" class="postlink">1 barrette à broches</a></li></ul><br><span style="font-size: 150%; line-height: 116%;">Principe de fonctionnement</span><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_module2.jpg" alt="Image">.<img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_leds.jpg" alt="Image"><br><br>Ce module comporte 8 chiffres lumineux (à 7 segments et point décimal), un clavier à 8 boutons (S1 à S8) et 8 LEDs à double couleur vert/rouge (LED1 à LED8). <br>Il est compatible avec Arduino et d'autres micro contrôleurs.<br><br>On peut enchaîner en série plusieurs de ces afficheurs, pour faire défiler du texte de l'un à l'autre, ou afficher de plus longs messages.<br><br>Il suffit de 3 ports IO pour piloter le module qui utilise une puce TM1638 (communication série). Le microcontrôleur a juste besoin d'envoyer ou de lire les données sur la mémoire RAM du module.<br><br><span style="font-size: 150%; line-height: 116%;">Câblage à réaliser</span><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/LKM1638_brochage.jpg" alt="Image"><br><br>Entrée Module (input) --&gt; Arduino<br><ul><li>1 VCC --&gt; +5V</li><li>2 GND --&gt; GND</li><li>3 CLK --&gt; pin d9</li><li>4 DIO --&gt; pin d8</li><li>5 STB0 --&gt; pin d7</li><li>6 STB1 --&gt; non utilisé ici, mais on peut en monter jusqu'à 6 en série</li><li>7 STB2 --&gt; pour les cascades de modules suivants</li><li>8 STB2 --&gt; </li><li>9 STB4 --&gt; </li><li>10 STB5 --&gt; <br> </li></ul><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/LKM1638_cablage.jpg" alt="Image"><br><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_montage.jpg" alt="Image"><br><br><span style="font-size: 150%; line-height: 116%;">Librairie TM1638</span><br>Cette librairie pour Arduino est développée par Ricardo Batista : "<span style="font-style: italic">A library for interacting an arduino with a TM1638 or a TM1640</span>"<br><!-- m --><a class="postlink" href="https://code.google.com/p/tm1638-library/">https://code.google.com/p/tm1638-library/</a><!-- m --><br><br>Elle supporte les modules reliés en chaîne, la lecture de boutons appuyés simultanément, les affichages de chiffres, de binaire ou de texte et le contrôle des LEDs.<br><br>Télécharger et inclure la librairie<br>#include &lt;TM1638.h&gt;<br><br>Pour l'utiliser, indiquer les broches utilisées (data 8, clock 9, strobe 7) sous la forme<br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>TM1638 module(8, 9, 7);</code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Modules en série</span><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/LKM1638_cablage_serie.jpg" alt="Image"><br><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_double.jpg" alt="Image"><br><br>Si on enchaîne plusieurs modules identiques, on les relie entre eux par un fils de liaison en nappe avec connecteur 10 broches (fourni).<br>Le câblage sur l'Arduino consiste à rajouter un seul fil par module supplémentaire dans la chaîne.<br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>TM1638 module1(8, 9, 7);&nbsp; //premier module, piloté par pin 7<br>TM1638 module2(8, 9, 6);&nbsp; //second module, piloté par pin 6<br></code></dd></dl><br><br>La référence complète de la librairie : <!-- m --><a class="postlink" href="https://code.google.com/p/tm1638-library/wiki/TableOfContents">https://code.google.com/p/tm1638-librar ... OfContents</a><!-- m --><br><br>On la télécharge ici, c'est le fichier <a href="https://code.google.com/p/tm1638-library/downloads/list" class="postlink">TM1638 Library v2.1.3.zip</a> à extraire dans le dossier <span style="color: #008000">arduino/libraries</span> de l'IDE Arduino.<br><!-- m --><a class="postlink" href="https://code.google.com/p/tm1638-library/downloads/list">https://code.google.com/p/tm1638-library/downloads/list</a><!-- m --><br><br><span style="font-size: 150%; line-height: 116%;">Exemple de code avec 1 afficheur</span><br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>/*<br>Library examples for TM1638.<br><br>Copyright (C) 2011 Ricardo Batista &lt;rjbatista at gmail dot com&gt;<br><br>This program is free software: you can redistribute it and/or modify<br>it under the terms of the version 3 GNU General Public License as<br>published by the Free Software Foundation.<br><br>This program is distributed in the hope that it will be useful,<br>but WITHOUT ANY WARRANTY; without even the implied warranty of<br>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&nbsp; See the<br>GNU General Public License for more details.<br><br>You should have received a copy of the GNU General Public License<br>along with this program.&nbsp; If not, see &lt;http://www.gnu.org/licenses/&gt;.<br>*/<br><br>#include &lt;TM1638.h&gt;<br><br>// define a module on data pin 8, clock pin 9 and strobe pin 7<br>TM1638 module(8, 9, 7);<br><br>void setup() {<br>&nbsp; // display a hexadecimal number and set the left 4 dots<br>&nbsp; module.setDisplayToHexNumber(0x1234ABCD, 0xF0);<br>}<br><br>void loop() {<br>&nbsp; byte keys = module.getButtons();<br><br>&nbsp; // light the first 4 red LEDs and the last 4 green LEDs as the buttons are pressed<br>&nbsp; module.setLEDs(((keys &amp; 0xF0) &lt;&lt; 8) | (keys &amp; 0xF));<br>}<br></code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Exemple de code avec 2 afficheurs en série</span><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>/*<br>Library examples for TM1638.<br><br>Copyright (C) 2011 Ricardo Batista &lt;rjbatista at gmail dot com&gt;<br><br>This program is free software: you can redistribute it and/or modify<br>it under the terms of the version 3 GNU General Public License as<br>published by the Free Software Foundation.<br><br>This program is distributed in the hope that it will be useful,<br>but WITHOUT ANY WARRANTY; without even the implied warranty of<br>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&nbsp; See the<br>GNU General Public License for more details.<br><br>You should have received a copy of the GNU General Public License<br>along with this program.&nbsp; If not, see &lt;http://www.gnu.org/licenses/&gt;.<br>*/<br><br>#include "TM1638.h"<br><br>// hello segments for display<br>const byte hello[] = {<br>&nbsp; 0b00000000, 0b01110110, 0b01111001, 0b00111000, 0b00111000, 0b00111111, 0b00000000, 0b00000000<br>};<br><br>// define the first module<br>TM1638 module1(8, 9, 7);<br>// to chain modules, use the same clk and data - just specify a different strobe pin<br>TM1638 module2(8, 9, 6);<br><br>unsigned long value = 0L;<br>boolean state = true;<br><br>void setup()<br>{<br>&nbsp; // display the hello segments on module 1<br>&nbsp; module1.setDisplay(hello);&nbsp; &nbsp;<br>&nbsp; // display the hello segments on module 2<br>&nbsp; module2.setDisplay(hello);&nbsp; &nbsp;<br><br>&nbsp; // light the lower 5 red LEDs and the top 5 green LEDs<br>&nbsp; module1.setLEDs(0b00011111 | 0b11111000 &lt;&lt; 8);<br><br>&nbsp; // light the 3rd red LED<br>&nbsp; module2.setLED(TM1638_COLOR_RED, 3);<br>&nbsp; // light the 5th green LED<br>&nbsp; module2.setLED(TM1638_COLOR_GREEN, 5);<br>&nbsp; // light the 7th red and green LEDs<br>&nbsp; module2.setLED(TM1638_COLOR_RED | TM1638_COLOR_GREEN, 7);<br>}<br><br>void loop()<br>{<br>&nbsp; byte key1, key2;<br><br>&nbsp; // read the buttons from the first module<br>&nbsp; key1 = module1.getButtons();<br>&nbsp; // read the buttons from the second module<br>&nbsp; key2 = module2.getButtons();<br><br>&nbsp; // both pressed<br>&nbsp; if (key1 != 0 &amp;&amp; key2 != 0) {<br>&nbsp; &nbsp; value = 0;<br><br>&nbsp; &nbsp;// set the display to 0 on both modules if they have buttons pressed simultaneously<br>&nbsp; &nbsp; module1.setDisplayToHexNumber(value, 0b10101010);<br>&nbsp; &nbsp; module2.setDisplayToDecNumber(value, 0b01010101);<br>&nbsp; } else {<br>&nbsp; &nbsp;// check the first module buttons<br>&nbsp; &nbsp; if (key1 != 0) {<br>&nbsp; &nbsp; &nbsp; // show the pressed buttons of the first module on its display<br>&nbsp; &nbsp; &nbsp; module2.setDisplayToBinNumber(key1, 0);<br>&nbsp; &nbsp; &nbsp; // and on the LEDs<br>&nbsp; &nbsp; &nbsp; module1.setLEDs(key1);<br><br>&nbsp; &nbsp;&nbsp; // check to see if it's the last button pressed<br>&nbsp; &nbsp; &nbsp; if (key1 &amp; 128) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// toggle the display state on/off<br>&nbsp; &nbsp; &nbsp; &nbsp; state = !state;<br>&nbsp; &nbsp; &nbsp; &nbsp; delay(200); // just wait for button up<br>&nbsp; &nbsp; &nbsp; }<br><br>&nbsp; &nbsp;&nbsp; // set the intensity and display state<br>&nbsp; &nbsp; &nbsp; module1.setupDisplay(state, key1 &gt;&gt; 1);<br>&nbsp; &nbsp; }<br><br>&nbsp; &nbsp;// check the second module buttons<br>&nbsp; &nbsp; if (key2 != 0) {<br>&nbsp; &nbsp; &nbsp; // just add it to the display value<br>&nbsp; &nbsp; &nbsp; value += key2;<br><br>&nbsp; &nbsp; &nbsp; // display it as an hexadecimal on the first module<br>&nbsp; &nbsp; &nbsp; module1.setDisplayToHexNumber(value, 0b10101010);<br>&nbsp; &nbsp; &nbsp; // and as a decimal on the second module<br>&nbsp; &nbsp; &nbsp; module2.setDisplayToDecNumber(value, 0b01010101);<br><br>&nbsp; &nbsp;&nbsp; // light the LEDs<br>&nbsp; &nbsp; &nbsp; module2.setLEDs(key2 &lt;&lt; 8);<br>&nbsp; &nbsp; }<br>&nbsp; }<br>}</code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Données techniques sur le module</span><br><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/LKM1638_codage.jpg" alt="Image"><br><br><span style="font-weight: bold">Principe de codage des segments</span><br><span style="font-weight: bold">Segments</span><br>Les 8 segments de gauche à droite sont aux positions paires de la mémoire  : 2 4 6 8 A C E<br>Pour chaque digit, le bit7 correspond au point décimal (virgule), les bits 0-6 correspondent aux segments a-g<br><br><span style="font-weight: bold">LEDS</span><br>Les 8 LEDs témoins sont aux positions de la mémoire 1 3 5 7 9 B D F, un octet contrôle chaque led individuellement.<br>bit0  pour allumer la led en rouge<br>bit1 pour allumer la led en vert<br>bit0 et bit 1 pour allumer la led en rouge+vert (= orange)<br><br><span style="font-weight: bold">Clavier</span><br>Le clavier complet à 8 touches, il est lu sur 4 octets.<br>Les quatre premières touches correspondant au bit le moins significatif (bit 0) des quatre octets lus.<br>Les quatre dernières touches correspondent à bit 3 du même octet.<br><br><span style="font-size: 150%; line-height: 116%;">Exemples d'utilisation</span><br><br><span style="font-weight: bold">Affichage de chiffres</span> (on peut afficher 0-9 et A-E en mode hexadécimal)<br>Afficher 98765432 et les 4 points décimaux de gauche :<br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>module.setDisplayToHexNumber(0x98765432, 0xF0);</code></dd></dl><br><br><span style="font-weight: bold">Afficher un texte</span> avec un point ensuite<br><br><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/tm1638_leds_chiffres.jpg" alt="Image"><br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>String name = " Tiptop ";<br>&nbsp;module.setDisplayToString(name, 0b00000010);<br></code></dd></dl><br><br><span style="font-weight: bold">Eclairer une des LED</span><br>void setLED(byte color, byte pos);<br>couleur 0=éteint 1=vert 2=rouge 3=orange<br>position 0 à 7 de gauche à droite<br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp; &nbsp; module.setLED(2, 3);&nbsp; //4eme led allumée en rouge<br>&nbsp; &nbsp; module.setLED(1, 4);&nbsp; //5eme en vert<br>&nbsp; &nbsp; module.setLED(3, 5);&nbsp; //6eme en orange<br></code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Exemple de chenillard à 8 leds tricolores</span><br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp;//== Chenillard de 8 leds tricolores<br>&nbsp; int duree = 250;&nbsp; //250 ms entre changements<br>for (&nbsp; byte NumLed=0; NumLed&lt;8; NumLed++) <br>{&nbsp; //led défilant de gauche à droite<br>&nbsp; module.setLED(1,NumLed);&nbsp; //vert <br>&nbsp; //Serial.println(NumLed);<br>&nbsp; delay(duree);<br>&nbsp; module.setLED(2,NumLed);&nbsp; //passe en rouge<br>&nbsp; delay(duree);<br>&nbsp; module.setLED(3,NumLed);&nbsp; //passe en orange<br>&nbsp; delay(duree);<br>&nbsp; module.setLED(0,NumLed);&nbsp; //puis éteindre<br></code></dd></dl><br><br><span style="font-weight: bold">Allumer plusieurs LEDs à la fois</span>.<br>void setLEDs(word led);<br><br>MSB pour les LEDs à éclairer en vert, LSB pour celles à éclairer en rouge.<br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>module.setLEDs(0x00FF);&nbsp; //Tout allumer en vert<br>module.setLEDs(0xFF00); //Tout allumer en rouge<br>module.setLEDs(0xFFFF);&nbsp; //Tout allumer en orange<br></code></dd></dl><br><br><span style="font-weight: bold">Surveiller les boutons appuyés</span><br>De gauche à droite <br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>byte getButtons();</code></dd></dl><br><br>Cette expression est vraie si on appuie le bouton de gauche<br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>module.getButtons() == 0b00000001</code></dd></dl><br><br>Cette expression est vraie si on appuie le bouton de droite<br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>module.getButtons() == 0b10000000</code></dd></dl><br><br>L'expression est vraie si on appuie les 2 boutons du milieu<br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>module.getButtons() == 0b00011000</code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Exemple de lecture de boutons</span><br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp;// lire les boutons, on récupère 1 2 4 8 16 32 64 128 selon le bouton appuyé<br>&nbsp;byte appui;<br>&nbsp;appui = module.getButtons();<br>&nbsp; Serial.println(appui);<br></code></dd></dl><br><br> <span style="font-weight: bold">Afficher un message erreur</span><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp;module.setDisplayToError();</code></dd></dl><br><br><span style="font-weight: bold">Afficher un nombre</span><br>Le point décimal est sous la forme 1 2 4 8 ... de droite à gauche<br>Mettre false pour ne pas afficher les zéros devant<br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp;module.setDisplayToDecNumber(i, 8,true);&nbsp; <br></code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Exemple de compteur de 0 à 10 000 qui défile rapidement</span><br><br><dl class="codebox"><dt>Code: <a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#" onclick="selectCode(this); return false;">Tout sélectionner</a></dt><dd><code>&nbsp;//=== Compteur de 0 à 10000 qui défile rapidement<br>&nbsp;for (unsigned long i=0;i&lt;=10000;i++)<br>&nbsp; {&nbsp; //ne pas afficher les zéros devant<br>&nbsp; &nbsp;module.setDisplayToDecNumber(i,0, false);&nbsp; //Compteur sans point decimal&nbsp; <br>&nbsp; }<br></code></dd></dl><br><br><span style="font-size: 150%; line-height: 116%;">Vitesse d'affichage </span><br>J'ai chronométré une durée de 33101 ms pour 10 000 affichages soit <span style="font-weight: bold">3.3 ms par rafraîchissement de l'affichage</span>.<br><br><span style="font-size: 150%; line-height: 116%;">Références</span><br>Librairie TM1638 et ses différentes fonctions<br><!-- m --><a class="postlink" href="https://code.google.com/p/tm1638-library/wiki/TableOfContents">https://code.google.com/p/tm1638-librar ... OfContents</a><!-- m --><br><br>Tutoriel en espagnol avec données techniques<br><!-- m --><a class="postlink" href="http://dqsoft.blogspot.fr/2012/11/display-de-leds-jy-lkm1638-parte-2.html">http://dqsoft.blogspot.fr/2012/11/displ ... rte-2.html</a><!-- m --></div>
+
+			<div id="sig17" class="signature"><span style="font-size: 85%; line-height: 116%;"><span style="font-style: italic">tiptopboards - admin</span></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile17">
+			<dt>
+				<a href="http://tiptopboards.free.fr/arduino_forum/memberlist.php?mode=viewprofile&u=2&sid=8b10dd3675f84d99d2ef10ec2ebb5d67"><img src="./Tutoriels pour Arduino • Afficher le sujet - Afficheur 8 chiffres à 7 segments - tutoriel Arduino_files/file.php" width="87" height="80" alt="Avatar de l’utilisateur"></a><br>
+				<a href="http://tiptopboards.free.fr/arduino_forum/memberlist.php?mode=viewprofile&u=2&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" style="color: #AA0000;" class="username-coloured">tiptop</a>
+			</dt>
+
+			<dd>Administrateur du site</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Messages:</strong> 65</dd><dd><strong>Inscription:</strong> Mar 13 Aoû 2013 20:38</dd><dd><strong>Localisation:</strong> 38</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://tiptopboards.com/" title="Site Internet: http://tiptopboards.com"><span>Site Internet</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=17#wrap" class="top" title="Haut">Haut</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider">
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="http://tiptopboards.free.fr/arduino_forum/posting.php?mode=reply&f=2&t=17&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" title="Répondre"><span></span>Répondre</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			1 message
+			 • Page <strong>1</strong> sur <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="http://tiptopboards.free.fr/arduino_forum/viewforum.php?f=2&sid=8b10dd3675f84d99d2ef10ec2ebb5d67" class="left-box left" accesskey="r">Retourner vers Capteurs</a></p>
+
+	<form method="post" id="jumpbox" action="http://tiptopboards.free.fr/arduino_forum/viewforum.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Aller à:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms[&#39;jumpbox&#39;].submit() }">
+			
+				<option value="-1">Sélectionner un forum</option>
+			<option value="-1">------------------</option>
+				<option value="1">Tutoriels</option>
+			
+				<option value="2" selected="selected">&nbsp; &nbsp;Capteurs</option>
+			
+				<option value="4">&nbsp; &nbsp;Vos projets</option>
+			
+			</select>
+			<input type="submit" value="Aller" class="button2">
+		</fieldset>
+	</form>
+
+
+	<h3>Qui est en ligne</h3>
+	<p>Utilisateurs parcourant ce forum: Aucun utilisateur enregistré et 3 invités</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="http://tiptopboards.free.fr/arduino_forum/index.php?sid=8b10dd3675f84d99d2ef10ec2ebb5d67" accesskey="h">Index du forum</a></li>
+				
+			<li class="rightside"><a href="http://tiptopboards.free.fr/arduino_forum/memberlist.php?mode=leaders&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">L’équipe du forum</a> • <a href="http://tiptopboards.free.fr/arduino_forum/ucp.php?mode=delete_cookies&sid=8b10dd3675f84d99d2ef10ec2ebb5d67">Supprimer les cookies du forum</a> • Heures au format UTC [ Heure d’été ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Développé par <a href="http://www.phpbb.com/">phpBB</a>® Forum Software © phpBB Group
+		<br>Traduction par <a href="http://forums.phpbb-fr.com/">phpBB-fr.com</a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43679950-1', 'tiptopboards.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body></html>

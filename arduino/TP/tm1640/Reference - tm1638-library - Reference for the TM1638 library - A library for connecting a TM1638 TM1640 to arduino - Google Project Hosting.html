@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://code.google.com/p/tm1638-library/wiki/Reference -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting.html">
+ 
+ <script src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/plusone.js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"projectHomeUrl": "/p/tm1638-library", "token": null, "projectName": "tm1638-library", "profileUrl": null, "loggedInUserEmail": null, "domainName": null, "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "relativeBaseUrl": "", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/10868592318973270098"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/ga.js"></script>
+ 
+ 
+ <title>Reference - 
+ tm1638-library -
+ 
+ Reference for the TM1638 library - 
+ A library for connecting a TM1638/TM1640 to arduino - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/tm1638-library/svnchanges/basic?path=/wiki/Reference.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/10868592318973270098/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="https://code.google.com/p/tm1638-library/wiki/Reference#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference&followup=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference" onclick="_CS_click(&#39;/gb/ph/signin&#39;);"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/tm1638-library">
+ <a href="https://code.google.com/p/tm1638-library/">
+ 
+ 
+ <img src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/logo" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/tm1638-library/"><span itemprop="name">tm1638-library</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/tm1638-library/"><span itemprop="description">A library for connecting a TM1638/TM1640 to arduino</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/tm1638-library/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/tm1638-library/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/tm1638-library/wiki/Reference?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/tm1638-library/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/tm1638-library/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/tm1638-library/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/tm1638-library/wiki/Reference#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/tm1638-library/wiki/Reference#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeopen"><a href="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting.html" class="currentpagelink">Library Reference</a> </li><ul class="treeleafcontainer"><li>Constructors </li><ul><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/DefaultConstrutor">Default</a> </li></ul><li>Methods </li><ul><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/clearDisplay">clearDisplay</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/clearDisplayDigit">clearDisplayDigit</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/getButtons">getButtons</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplay">setDisplay</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayDigit">setDisplayDigit</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToBinNumber">setDisplayToBinNumber</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToDecNumber">setDisplayToDecNumber</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToSignedDecNumber">setDisplayToSignedDecNumber</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToError">setDisplayToError</a>      </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToHexNumber">setDisplayToHexNumber</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToString">setDisplayToString(char*)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToString2">setDisplayToString(String)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setLED">setLED</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setLEDs">setLEDs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/tm1638-library/wiki/setupDisplay">setupDisplay</a> </li></ul></ul></ul>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">Reference</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Reference for the TM1638 library</i>
+ 
+ 
+ <br>
+ 
+ <a class="label" style="padding-top: 2px" href="https://code.google.com/p/tm1638-library/w/list?q=label:Phase-Implementation" title="Developers&#39; guide">Phase-Implementation</a>, 
+ 
+ <a class="label" style="padding-top: 2px" href="https://code.google.com/p/tm1638-library/w/list?q=label:Featured" title="Listed on project home page">Featured</a>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Mon Feb 20 14:28:52 2012">
+ Feb 20, 2012</span>
+ 
+ by 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="TM1638/TM1640_library"></a>TM1638/TM1640 library<a href="https://code.google.com/p/tm1638-library/wiki/Reference#TM1638/TM1640_library" class="section_anchor"></a></h1><p>This is a library for interacting an arduino with a TM1638/TM1640 module. </p><p>The <a href="http://www.dealextreme.com/p/81873?r=68099021" rel="nofollow">TM1638 module</a> is a module with 8x 7-segment display (8 digits), 8x 2 color (red and green) LED and 8x buttons and is controlled using serial commands. </p><p>The TM1638 module is designed to be chainable. It uses only one pin for <i>clock</i>, one pin for <i>data</i> and an additional pin (<i>strobe</i>) for each module you chain up to 6... that's a total of 8 pins for controlling 48 (8x6) 7-segment digits, 48 buttons and 96 LEDs (48 red and 48 green). </p><p>Great to use as a "helper/debugging" module. </p><p>The <a href="http://www.dealextreme.com/p/104311?r=68099021" rel="nofollow">TM1640 module</a> is a module with 16x 7-segment display (8 digits) and is controlled using serial commands. </p><h1><a name="Usage"></a>Usage<a href="https://code.google.com/p/tm1638-library/wiki/Reference#Usage" class="section_anchor"></a></h1><p>This library is designed to allow usage of simultaneous independent modules (chained or unchained). </p><p>Basic usage is (after including "TM1638.h"): </p><pre class="prettyprint"><span class="pln">TM1638 </span><span class="kwd">module</span><span class="pun">(</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">);</span></pre><p>This defines a module with data on pin 8, clock on pin 9 and strobe on pin 7. </p><p>Chaining modules is as easy as: </p><pre class="prettyprint"><span class="pln">TM1638 module1</span><span class="pun">(</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">);</span><span class="pln"><br>TM1638 module2</span><span class="pun">(</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">);</span></pre><p>This defines two modules with data on pin 8, clock on pin 9 and strobes on pin 6 and 7. </p><p>There is also support for inverted TM1638 modules. They are used just like regular TM1638 and can be instantiated (after including "InvertedTM1638.h") with: </p><pre class="prettyprint"><span class="typ">InvertedTM1638</span><span class="pln"> </span><span class="kwd">module</span><span class="pun">(</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">);</span></pre><p>The TM1640 modules are used just like regular TM1638 and can be instantiated (after including "TM1640.h") with: </p><pre class="prettyprint"><span class="pln">TM1640 </span><span class="kwd">module</span><span class="pun">(</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">);</span></pre><h1><a name="Library_Reference"></a>Library Reference<a href="https://code.google.com/p/tm1638-library/wiki/Reference#Library_Reference" class="section_anchor"></a></h1><p><a href="https://code.google.com/p/tm1638-library/wiki/TableOfContents">Full Reference</a> </p><h2><a name="Constructors"></a>Constructors<a href="https://code.google.com/p/tm1638-library/wiki/Reference#Constructors" class="section_anchor"></a></h2><p><a href="https://code.google.com/p/tm1638-library/wiki/DefaultConstrutor">Default Constructor</a> </p><h2><a name="Methods"></a>Methods<a href="https://code.google.com/p/tm1638-library/wiki/Reference#Methods" class="section_anchor"></a></h2><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Method</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Description</strong> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/clearDisplay">clearDisplay</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Clears the display. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/clearDisplayDigit">clearDisplayDigit</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Clear a single 7-segment display. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/getButtons">getButtons</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Returns the pressed buttons as a bit set (left to right). (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplay">setDisplay</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the 7-segment displays to the 8 values (left to right). (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayDigit">setDisplayDigit</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set a single display to a digit. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToBinNumber">setDisplayToBinNumber</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to a binary number. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToDecNumber">setDisplayToDecNumber</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to a unsigned decimal number, with or without leading zeros. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToSignedDecNumber">setDisplayToSignedDecNumber</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to a signed decimal number, with or without leading zeros. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToError">setDisplayToError</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to an error message. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToHexNumber">setDisplayToHexNumber</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to a unsigned hexadecimal number, with or without leading zeros. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToString">setDisplayToString(char*)</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to the string. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setDisplayToString2">setDisplayToString(String)</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display to the string. (TM1638/TM1640) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setLED">setLED</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Controls a LED. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setLEDs">setLEDs</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set all the LEDs. (TM1638) </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://code.google.com/p/tm1638-library/wiki/setupDisplay">setupDisplay</a> </td><td style="border: 1px solid #ccc; padding: 5px;"> Set the display (all 7-segments) and LEDs on or off and the specifies the intensity. (TM1638/TM1640) </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116141109821515825802/">dacomput...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sun Dec  4 20:43:53 2011">Dec 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is this compatible with the TM1640 driver in this module? <a href="http://www.dealextreme.com/p/jy-mcu-16x-digital-tube-yellow-led-module-104311" rel="nofollow">http://www.dealextreme.com/p/jy-mcu-16x-digital-tube-yellow-led-module-104311</a> </p><p>Here is all the reference info I could find: <img src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/T2.4X6XixaXXXXXXXX_!!12774208.jpg"> Schematic: <a href="http://ljy99731.13.dns222.net/download/LM1640_sch.pdf" rel="nofollow">http://ljy99731.13.dns222.net/download/LM1640_sch.pdf</a> Datasheet: <a href="http://ljy99731.13.dns222.net/download/tm1640.pdf" rel="nofollow">http://ljy99731.13.dns222.net/download/tm1640.pdf</a> </p><p>If not, is there any way you could make another library/ or perhaps edit the TM1638 library to work on the TM1640? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Dec  5 07:29:27 2011">Dec 5, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Unfortunately, I don't have a TM1640, so can't really test or implement a library for it. </p><p>If I get my hands on one, I'll try to make it work and update the library for it. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 10 18:34:26 2012">Jan 10, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I've received my TM1640 today and added support for it in the library. </p><p>Hope this helps! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">xJoe...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Sun Jun  3 00:31:34 2012">Jun 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>HELPFUL!!! LOVE IT SO MUCH! THXXXXXXXXXXX!!!! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101991481694806761478/">neiljack...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Jun 15 12:47:28 2012">Jun 15, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>This is great work. We owe you a debt of gratitude. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/107970261437993030544/">julien.l...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jun 19 00:54:15 2012">Jun 19, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hey ! You're doing a great job here !  Thx so much ! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">dejard...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Sun Aug  5 10:29:42 2012">Aug 5, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>thanks so much </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101063442383427925432/">Aaron.Da...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 20 19:16:33 2012">Aug 20, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi there,  </p><p>Could someone provide some example code to simply use all 16 digits and count from 0000000000000000 to 9999999999999999 I have only made the thing use 6 of the digits before it dumps on me. </p><p>--Aaron </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Aug 21 02:13:32 2012">Aug 21, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>That is not all that straightforward: the maximum number you can achieve with an unsigned long is 4,294,967,295 (2^32 - 1). Resorting to floating point for a counter is not really credible. </p><p>You would have to use two counters and adding with carry. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116946987953622883678/">RTykuls...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 23 19:19:16 2012">Aug 23, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Thanks for the <strong>wonderful</strong> libraries. Here's some code to count all 16 digits: </p><pre class="prettyprint"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;TM1638.h&gt;</span><span class="pln"><br></span><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;TM1640.h&gt;</span><span class="pln"><br><br>TM1640 </span><span class="kwd">module</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span><span class="pln"> </span><span class="com">// define a module on data pin 3, clock pin 2</span><span class="pln"><br><br></span><span class="kwd">const</span><span class="pln"> </span><span class="kwd">long</span><span class="pln"> MAX </span><span class="pun">=</span><span class="pln"> </span><span class="lit">100000000</span><span class="pun">;</span><span class="pln"> </span><span class="com">// upper limit on displaying 8 digits</span><span class="pln"><br></span><span class="kwd">char</span><span class="pln"> buffer</span><span class="pun">[</span><span class="lit">16</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">];</span><span class="pln"> </span><span class="com">// our display buffer</span><span class="pln"><br></span><span class="kwd">long</span><span class="pln"> hi</span><span class="pun">;</span><span class="pln"> </span><span class="com">// counter for left-most 8 digits; higher part of counter</span><span class="pln"><br></span><span class="kwd">long</span><span class="pln"> lo</span><span class="pun">;</span><span class="pln"> </span><span class="com">// counter for right-most 8 digits; lower part of counter</span><span class="pln"><br><br></span><span class="kwd">void</span><span class="pln"> setup</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">module</span><span class="pun">.</span><span class="pln">setupDisplay</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">);</span><span class="pln"><br>&nbsp; lo </span><span class="pun">=</span><span class="pln"> MAX </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1000</span><span class="pun">;</span><span class="pln"> &nbsp;</span><span class="com">// interesting start value</span><span class="pln"><br>&nbsp; hi </span><span class="pun">=</span><span class="pln"> MAX </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span><span class="com">// another interesting start value</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br><br></span><span class="kwd">void</span><span class="pln"> loop</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; lo </span><span class="pun">+=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span><span class="com">// increment lower part of the counter</span><span class="pln"><br><br>&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">lo </span><span class="pun">==</span><span class="pln"> MAX</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">// have we overflowed the lower part of the counter?</span><span class="pln"><br>&nbsp; &nbsp; lo </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="com">// reset lower to zero</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">++</span><span class="pln">hi</span><span class="pun">;</span><span class="pln"> </span><span class="com">// increment high part</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">hi </span><span class="pun">==</span><span class="pln"> MAX</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">// have we overflowed the higher part of the counter?</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; lo </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> <br>&nbsp; &nbsp; &nbsp; hi </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br><br>&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">hi </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">// if nothing in high part, left pad display with eight spaces</span><span class="pln"><br>&nbsp; &nbsp; sprintf</span><span class="pun">(</span><span class="pln">buffer</span><span class="pun">,</span><span class="pln"> </span><span class="str">" &nbsp; &nbsp; &nbsp; &nbsp;%8ld"</span><span class="pun">,</span><span class="pln"> lo</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"> <br>&nbsp; </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; sprintf</span><span class="pun">(</span><span class="pln">buffer</span><span class="pun">,</span><span class="pln"> </span><span class="str">"%8ld%08ld"</span><span class="pun">,</span><span class="pln"> hi</span><span class="pun">,</span><span class="pln"> lo</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br><br>&nbsp; </span><span class="kwd">module</span><span class="pun">.</span><span class="pln">setDisplayToString</span><span class="pun">(</span><span class="pln">buffer</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">}</span></pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101063442383427925432/">Aaron.Da...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Fri Aug 24 18:07:26 2012">Aug 24, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi Ricardo,  </p><p>My friend on IRC made some edits to one or two of the header files and I have also included a sample program that takes advantage of these very simple program <a href="https://www.dropbox.com/s/85qw2har843fyje/TM16XX.rar" rel="nofollow">https://www.dropbox.com/s/85qw2har843fyje/TM16XX.rar</a> </p><p>He changed something within one of the files "do a diff on them and compare" to the function module.setDisplayToDecNumber and made it unsigned long vs int so it can use all 8 digits. </p><p>I understand its quite difficult to fill the display up with 16 digits, although is it possible to simply use two unsigned long variables and assign where where to display the number such as Unsigned long number1 would display on digits 1-8 and Unsigned long number2 would display on digits 9-16 ? </p><p>And use your suggestion from earlier and just use a carry bit to the next variable? </p><p>I'll touch bases with the RTY guy above and work with him if... well he is interested! :) </p><p>Thanks,  --Aaron </p><p>Let me know what you think about the edits that were done to your libraries. </p><p>Thanks again,   </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 27 17:25:18 2012">Aug 27, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Sorry that I haven't had that much time to pick this up. But I promise I'll try to get it as soon as I have some spare time. </p><p>I've taken a peek at your code but it's based on an older version of the library. Anyway, I do have a setDisplayTo&lt;&gt;Number implementation for the TM1640 (similar to that code)... just haven't had time to polish it. I'll try to put it up ASAP. </p><p>The real problem is that I didn't find it necessary to print such large numbers on the TM1640. But it was requested enough times for me to do it. :) </p><p>As for the 64 bit counter, the best way would probably be to implement the arithmetic in assembly, using the same instructions as for the 32 bit math - AFAIK the arduino is only 8 bit and implements the 32 bit math using the ADD/ADC, SUB/SBC, etc.. The arduino does have a uint64_t defined, but I haven't tried doing anything with it. It is likely that someone already took the time to do a 64 bit math library for it, but I haven't tried to find it. </p><p>Anyway, I'll create methods (as soon as I can) for displaying 64 numbers on the TM1640 using two unsigned longs. I'll leave out of the library the 64-bit math, as it is out of it's scope. Still, if you guys find it relevant, I'll had an TM1640With64Bit (or something like it) object to the library. :) </p><p>Anyway, there is already an issue for this and further discussion should probably go there.. would help to track it down later. </p><p>Thank you for showing interest in the library guys! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101752688360137195421/">jackde...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 30 21:22:10 2012">Aug 30, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>sprintf doesn't work with the Arduino IDE, in my experience. There's an alternate called dtostrf which is much more limitedץ  </p><p>Thanks for the library! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101063442383427925432/">Aaron.Da...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Sep  8 16:57:12 2012">Sep 8, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi there Batista,  </p><p>I would hope that you could implement some of the same commands you did for the TM1638 module such as the following; </p><p>setDisplayDigit setDisplayToBinNumber setDisplayToDecNumber setDisplayToSignedDecNumber setDisplayToError setDisplayToHexNumber </p><p><strong>I should probably download your latest library and stop using the modified version... that won't get me anywhere :) </strong></p><p>If you can simply use two counters and assign where they get printed on the display left most 8 digits or right most 8 digits and assign them based off "SetDisplaytoDigit<a href="https://code.google.com/p/tm1638-library/w/edit/SetDisplaytoDigit">?</a>() function I think you would be in business? maybe? I have tried the example that RTY...@gmail.com posted above, it works great! although not to poke a stick at anyone, I feel it shouldn't be that complicated. </p><p>I have had a conversation with a couple friends showing interest in this display and was pondering a way to specify lighting up individual segments on the display.. some function like module.SetDisplaySegment<a href="https://code.google.com/p/tm1638-library/w/edit/SetDisplaySegment">?</a>("Position 1-16",0b00001000).. That's kind of the idea module.SetDisplaySegment<a href="https://code.google.com/p/tm1638-library/w/edit/SetDisplaySegment">?</a>(10,0b00001000) would set the 10th segment to what's enlivenment to an underscore looking at your fonts.h file, maybe a way of chaining a bunch of them together.... however it should work. </p><p>Honestly I kind of got the idea after seeing the old movie predator, the whole self destruct sequence of gibberish numbers.. </p><p>It's either that or simply modify your fonts.h file...would prefer to not have to do that. </p><p>Thanks!@ </p><p>--Aaron </p><p>  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/101063442383427925432/">Aaron.Da...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Sep  8 19:30:07 2012">Sep 8, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>... I feel like a boob.. Ignore any idea I had that was not already fixed in your new module version...TM1638 Library v2.1.2.zip </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/112684441366282127935/">nasty...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sun Oct 28 17:49:03 2012">Oct 28, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>O.k. First of all: Thank you for your efforts. </p><p>I'm a complete noob and have no idea how to use this. The included examples are abracadabra to me. Haven't been able to do any useful stuff with it. Has anyone got any reference material what will explain it to me like I'm a five year old??  </p><p>I'm using the jy-lkm1638 module.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/aereal@gmail.com/">aereal@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Dec 12 11:01:16 2013">Dec 12, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Just made a final project for university using your library. Good work. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/103582039681094555374/">rjbati...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Dec 12 11:22:02 2013">Dec 12, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Thank you. Glad to hear my library helped. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">rapa...@hotmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Sep 24 15:23:49 2014">Sep 24, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>I'm looking for a PIC example </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">►</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference&followup=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference">Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/tm1638-library/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="Reference">
+ <input type="hidden" name="token" value="">
+ </form>
+
+
+ <script src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./Reference - tm1638-library - Reference for the TM1638 library - A library for connecting a TM1638 TM1640 to arduino - Google Project Hosting_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><div class="menuCategory controls"><a class="menuItem" href="http://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Ftm1638-library%2Fwiki%2FReference" style="display: block;">Sign in to see your favorites</a><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div></body></html>
