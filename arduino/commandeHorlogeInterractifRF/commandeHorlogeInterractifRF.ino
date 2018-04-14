@@ -53,12 +53,18 @@ void pinD2ISR()
     dirty = 1;                          // flag interrupt occurance
 }
  
+//alarmer
+long temps; //variable qui stocke la mesure du temps
+boolean etat_alarm;
+ 
+
 
 
 void setup() 
 {
   // put your setup code here, to run once:
    Serial.begin(9600);
+
  
 
   allumageAuto=false;
@@ -77,7 +83,12 @@ void setup()
   digitalWrite(rl3, 1);
   digitalWrite(rl4, 1);
   
-  tone(piezo, 600, 500);
+  tone(piezo, 1000, 500);
+  
+  //on initialise le temps
+    temps = millis();
+    etat_alarm=0;
+    
 
 }
 
@@ -96,7 +107,9 @@ void loop()
                 }
                if(r06a_1)//"b" sur le telecommand
                {
+                 
                   Serial.println("b");
+                  alarme = false; 
                }
                if(r06a_2)//"c" sur le telecommand
                {
@@ -127,7 +140,7 @@ void loop()
     }
     
     if (alarme)
-      biper(1000, 1000);
+      alaermer(); //   biper(100, 500);
 
    
 
@@ -183,20 +196,20 @@ void lireVoieSerie(void)
      if(strRecu.compareTo("bip") == 0 && activerCapteurBip)
      {
        Serial.println("bip");
-       tone(piezo, 600, 500); //une bipe
+       tone(piezo, 1000, 500); //une bipe
      }
            
      if(strRecu.compareTo("alarm") == 0)
      {
        Serial.println("alarm");
-       alarme = true; //une bipe
+       alarme = true; 
      }  
      
      
      if(strRecu.compareTo("finAl") == 0)//pour desactiver l'alarm
      {
          Serial.println("finAl");
-        alarme = false; //une bipe
+        alarme = false; 
      }
 
      
@@ -255,5 +268,20 @@ void biper(int fr, int intervale) //fait biber le piezo et clignoter la led
     }
   }
 }
+
+void alaermer()
+{
+  
+   if((millis() - temps) > 1000)
+        {
+          if(etat_alarm)
+            tone(piezo, 800, 250);
+          else
+            tone(piezo, 800, 500);
+            etat_alarm = !etat_alarm; //on inverse l'état de la LE            
+            temps = millis(); //on stocke la nouvelle heure
+        }
+}
+
 
 
