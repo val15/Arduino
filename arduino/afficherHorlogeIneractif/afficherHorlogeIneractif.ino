@@ -20,9 +20,10 @@ const int piezo = 13;
 bool rougeTrFaibleAllumE=false;
 bool rougeAllumE=false;
 bool clignoTActiV=false;
+bool premierFoisClignotement=true;
 bool autorisationRougeTrFaibleAllumE=true;
 bool autorisationRougeAllumE=true;
-bool autorisationClignoTActiV=true;
+bool autorisationClignoTEtEclErageActiV=true;
 
 //varibles pour traiter la réception des données sur la ports série
 int const tailletableau = 1000;
@@ -154,7 +155,7 @@ void loop()
     lireVoieSerie();
   if (alarme)
     biper(600, 500);
-  if (autorisationClignoTActiV && clignoTActiV)
+  if (autorisationClignoTEtEclErageActiV && premierFoisClignotement)
     faireClignoter( 250);
 
    if(autorisationRougeAllumE &&  rougeAllumE)
@@ -205,17 +206,24 @@ void capterLamumiaire()
   //capteur de lumiaire
   valeurLumieire = analogRead(capteurLumiR);//o-1024
   valeurLumieire = valeurLumieire * 100.0 / 1024; //de 0-100
-
-  if (valeurLumieire > 0 )
-  {
-    analogWrite(luminositer, 200);
-    activerCapteurBip = true;
-  }
-  else
+  if(autorisationClignoTEtEclErageActiV==false)
   {
     analogWrite(luminositer, 0);
-    activerCapteurBip = false;
   }
+  else
+    {
+       if (valeurLumieire > 0 )
+    {
+      analogWrite(luminositer, 200);
+      activerCapteurBip = true;
+    }
+    else
+    {
+      analogWrite(luminositer, 0);
+      activerCapteurBip = false;
+    }
+  }
+ 
 }
 
 void lireVoieSerie(void)
@@ -250,7 +258,7 @@ void lireVoieSerie(void)
         String etatUneHeur = text.substring(text.indexOf("*") + 1, text.indexOf("+"));
         String etatAlarme = text.substring(text.indexOf("+") + 1, text.indexOf("<"));
         String activerAlarme = text.substring(text.indexOf("<") + 1, text.indexOf(">"));
-        String autorisationActiverClignotement = text.substring(text.indexOf(">") + 1, text.indexOf("~"));
+        String autorisationActiverClignotementEtEclErage = text.substring(text.indexOf(">") + 1, text.indexOf("~"));
 
 
         String message = text.substring(text.indexOf("~") + 1, text.indexOf("%"));
@@ -309,6 +317,7 @@ void lireVoieSerie(void)
         if(autorisationLedEspaceFaibleActiV.compareTo("d")==0)
         {
             autorisationRougeAllumE =false;
+            clignoTActiV=false;
             rvbOff();
         }
         else
@@ -349,13 +358,14 @@ void lireVoieSerie(void)
             autorisationBuper = true;
         }
         
-        if (autorisationActiverClignotement.compareTo("d") == 0)
+        if (autorisationActiverClignotementEtEclErage.compareTo("d") == 0)
         {
-            autorisationClignoTActiV=false;
+            autorisationClignoTEtEclErageActiV=false;
+            premierFoisClignotement=false;
             rvbOff();
         }
         else
-            autorisationClignoTActiV=true;
+            autorisationClignoTEtEclErageActiV=true;
     }
 }
 

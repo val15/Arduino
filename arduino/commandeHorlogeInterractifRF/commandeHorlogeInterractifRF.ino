@@ -101,8 +101,8 @@ void loop()
                 {
                
                     Serial.println("a");
-                    allumageAuto=false;
-                     lumiereAllumE=!false;
+                   // allumageAuto=false;
+                    // lumiereAllumE=!false;
                     
                 }
                if(r06a_1)//"b" sur le telecommand
