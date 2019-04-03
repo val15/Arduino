@@ -34,6 +34,7 @@ const int piezo = 13;
 boolean autorisationBuper = true;
 boolean alarme = false;
 boolean activerCapteurBip = false;
+boolean nigthMode=false;
 
 
 //uatres varibles
@@ -103,6 +104,7 @@ void loop()
                     Serial.println("a");
                    // allumageAuto=false;
                     // lumiereAllumE=!false;
+                    nigthMode=!nigthMode;
                     
                 }
                if(r06a_1)//"b" sur le telecommand
@@ -193,7 +195,7 @@ void lireVoieSerie(void)
    
       
         //pour l'alarme et le bip
-     if(strRecu.compareTo("bip") == 0 && activerCapteurBip)
+     if(strRecu.compareTo("bip") == 0 && activerCapteurBip && !nigthMode)
      {
        Serial.println("bip");
        tone(piezo, 1000, 500); //une bipe
