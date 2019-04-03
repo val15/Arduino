@@ -249,8 +249,10 @@ void capterLumiere()
 
 void toutEtindre()
 {
-  priseActivE=!false;
+  //priseActivE=!false;
   lumiereAllumE=!false;
+  nigthMode=true;
+  
 }
 
 void toutAllumer()
