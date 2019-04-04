@@ -252,6 +252,7 @@ void toutEtindre()
   //priseActivE=!false;
   lumiereAllumE=!false;
   nigthMode=true;
+ Serial.println("a");
   
 }
 
