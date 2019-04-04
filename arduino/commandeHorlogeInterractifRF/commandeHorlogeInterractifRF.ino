@@ -142,7 +142,7 @@ void loop()
     }
     
     if (alarme)
-      alaermer(); //   biper(100, 500);
+      alarmer(); //   biper(100, 500);
 
    
 
@@ -273,8 +273,9 @@ void biper(int fr, int intervale) //fait biber le piezo et clignoter la led
   }
 }
 
-void alaermer()
+void alarmer()
 {
+  nigthMode=false;
   
    if((millis() - temps) > 1000)
         {
