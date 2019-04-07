@@ -20,7 +20,7 @@ const int piezo = 13;
 bool rougeTrFaibleAllumE=false;
 bool rougeAllumE=false;
 bool clignoTActiV=false;
-bool premierFoisClignotement=false;
+bool premierFoisClignotement=true;
 bool autorisationRougeTrFaibleAllumE=true;
 bool autorisationRougeAllumE=true;
 bool autorisationClignoTEtEclErageActiV=true;
@@ -155,7 +155,7 @@ void loop()
     lireVoieSerie();
   if (alarme)
     biper(600, 500);
-  if (autorisationClignoTEtEclErageActiV && premierFoisClignotement)
+  if (/*autorisationClignoTEtEclErageActiV*/ clignoTActiV && premierFoisClignotement)
     faireClignoter( 250);
 
    if(autorisationRougeAllumE &&  rougeAllumE)
@@ -352,10 +352,11 @@ void lireVoieSerie(void)
             alarme = false;
             autorisationBuper = false;
         }
-        if (activerAlarme.compareTo("a") == 0) 
+        if (activerAlarme.compareTo("a") == 0) //a singifit alluer l'alarme et le clignotement
         {
             alarme = true;
             autorisationBuper = true;
+            premierFoisClignotement=true;
         }
         
         if (autorisationActiverClignotementEtEclErage.compareTo("d") == 0)
