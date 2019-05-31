@@ -115,12 +115,12 @@ void loop()
                }
                if(r06a_2)//"c" sur le telecommand
                {
-                  Serial.println("c");
+                  //Serial.println("c");
                   lumiereAllumE=!lumiereAllumE;
                }
               if(r06a_3)//"d" sur le telecommand
               {
-                  Serial.println("d");
+                  //Serial.println("d");
                   priseActivE=!priseActivE;
                }  
                dirty = 0;              // clear interrupt occurance flag
